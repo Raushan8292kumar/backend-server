@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Note=require("./../models/struct");
+const Note=require("../models/struct");
 
 router.post("/list", async (req, res) => {
   var note = await Note.find({ userid: req.body.userid });
