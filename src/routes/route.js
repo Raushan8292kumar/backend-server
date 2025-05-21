@@ -22,7 +22,7 @@ router.post("/add", async (req, res) => {
 router.post("/remove", async (req, res) => {
   await Note.deleteOne({ id: req.body.id });
   const response = { message: `${req.body.id} is Deleted` };
-  res.send(response);
+  res.json(response);
 });
 
 module.exports=router;

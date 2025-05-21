@@ -11,7 +11,7 @@ const DBSTRING =
 mongoose.connect(DBSTRING).then(() => {
   app.get("/", (req, res) => {
     let response = { message: "API working fine!!!" };
-    res.send(response);
+    res.json(response);
   });
   const rootrouter = require("./routes/route");
   app.use("/notes", rootrouter);
