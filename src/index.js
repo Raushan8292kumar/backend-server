@@ -16,8 +16,8 @@ mongoose.connect(DBSTRING).then(() => {
   app.use("/notes", rootrouter);
 });
 
-app.get("/response", (req, res) => {
-  res.send("Hellllo BOOOOOSS");
+app.get("/resp", (req, res) => {
+  res.send("Hellllo BOOSS");
 });
 app.listen(port, () => {
   console.log(`server is listen port ${port}`);
