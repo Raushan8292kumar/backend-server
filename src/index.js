@@ -13,7 +13,7 @@ mongoose.connect(DBSTRING).then(() => {
     let response = { message: "API working fine!!!" };
     res.send(response);
   });
-  const rootrouter = require("./routers/route");
+  const rootrouter = require("./routes/route");
   app.use("/notes", rootrouter);
 });
 
